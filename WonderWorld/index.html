@@ -1,0 +1,584 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WonderWorld - Where Language Meets Culture</title>
+    <meta name="description" content="Connect with local multilingual interpreters, discover authentic Kenyan experiences, and explore cultural heritage" />
+    <meta name="author" content="WonderWorld" />
+
+    <meta property="og:title" content="WonderWorld" />
+    <meta property="og:description" content="Connect with local multilingual interpreters, discover authentic Kenyan experiences, and explore cultural heritage" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Icons via Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #333;
+      }
+
+      /*.bg-pattern {
+        background-image: url(https://ik.imagekit.io/aventure/wp-content/uploads/Elephants-and-Kilimanjaro-for-AV.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;*/ 
+      }
+    </style>
+    
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  </head>
+  <body class="min-h-screen">
+    <!-- Hero Section -->
+    <header class="relative overflow-hidden text-white py-20 px-4">
+      
+      <div class="absolute inset-0 z-0">
+        <img src="https://ik.imagekit.io/aventure/wp-content/uploads/Elephants-and-Kilimanjaro-for-AV.jpeg" alt="Kenyan Landscape" class="w-full h-full object-cover " />
+      </div>
+      <div class="absolute inset-0 bg-pattern opacity-10"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-purple-900/70"></div>
+      <div class="relative z-10 max-w-7xl mx-auto text-center">
+        <div class="flex items-center justify-center mb-4">
+          <i data-lucide="globe" class="w-10 h-10 mr-3"></i>
+          <h1 class="text-4xl md:text-5xl font-bold">WonderWorld</h1>
+        </div>
+        <p class="text-2xl mb-4 max-w-3xl mx-auto font-medium">
+          "Where Language Meets Culture"
+        </p>
+        <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+          Connect with local multilingual interpreters, discover authentic Kenyan experiences, 
+          and explore cultural heritage like never before
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button class="bg-white text-purple-700 hover:bg-gray-100 px-6 py-6 text-lg font-medium rounded-md flex items-center">
+            <i data-lucide="users" class="mr-2"></i> Find a Local Interpreter
+          </button>
+          <button class="bg-transparent border-2 border-white hover:bg-white/10 px-6 py-6 text-lg font-medium rounded-md flex items-center">
+            <i data-lucide="calendar" class="mr-2"></i> Explore Cultural Events
+          </button>
+        </div>
+        
+        <div class="mt-12 flex flex-wrap justify-center gap-6">
+          <div class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full flex items-center">
+            <i data-lucide="map-pin" class="w-5 h-5 mr-2"></i>
+            <span>20+ Heritage Sites</span>
+          </div>
+          <div class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full flex items-center">
+            <i data-lucide="globe" class="w-5 h-5 mr-2"></i>
+            <span>40+ Languages</span>
+          </div>
+          <div class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full flex items-center">
+            <i data-lucide="users" class="w-5 h-5 mr-2"></i>
+            <span>200+ Local Interpreters</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Feature Highlights -->
+    <section class="px-4 py-8">
+      <h2 class="text-2xl font-bold text-center mb-6 text-purple-900">What We Offer</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto">
+        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 flex items-start border border-purple-100">
+          <div class="bg-yellow-100 p-3 rounded-full mr-4 flex-shrink-0">
+            <i data-lucide="users" class="w-8 h-8 text-purple-600"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-2 text-purple-900">Connect with Locals</h3>
+            <p class="text-gray-600">Find local guides who speak your language and understand your needs.</p>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 flex items-start border border-purple-100">
+          <div class="bg-green-100 p-3 rounded-full mr-4 flex-shrink-0">
+            <i data-lucide="calendar" class="w-8 h-8 text-purple-600"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-2 text-purple-900">Discover Events</h3>
+            <p class="text-gray-600">Explore local festivals, traditions, and cultural events.</p>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 flex items-start border border-purple-100">
+          <div class="bg-red-100 p-3 rounded-full mr-4 flex-shrink-0">
+            <i data-lucide="utensils" class="w-8 h-8 text-purple-600"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-2 text-purple-900">Taste Local Cuisine</h3>
+            <p class="text-gray-600">Get personalized recommendations for authentic food experiences.</p>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 flex items-start border border-purple-100">
+          <div class="bg-blue-100 p-3 rounded-full mr-4 flex-shrink-0">
+            <i data-lucide="store" class="w-8 h-8 text-purple-600"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-2 text-purple-900">Support Local</h3>
+            <p class="text-gray-600">Help local businesses thrive through sustainable tourism.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Local Guides Section -->
+    <section class="px-4 py-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-2xl font-bold mb-6 text-purple-900">Connect with Local Guides</h2>
+        <p class="text-gray-600 mb-8">Find guides who speak your language and can show you the true local experience.</p>
+        
+        <div class="overflow-x-auto pb-4">
+          <div class="flex gap-4 min-w-max">
+            <!-- Guide 1 -->
+            <div class="w-64 bg-white rounded-lg shadow-md overflow-hidden border border-purple-100">
+              <div class="h-48 overflow-hidden">
+                <img style="object-fit: cover; object-position: top;" src="https://diasporamessenger.com/wp-content/uploads/2016/10/Teacher-Wanjiku-460x350.jpg" alt="Wanjiku Kamau" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-bold text-lg mb-1">Wanjiku Kamau</h3>
+                <p class="text-sm text-purple-600 mb-2">Cultural Heritage Expert</p>
+                <div class="flex flex-wrap gap-1 mb-3">
+                  <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded-full text-xs">English</span>
+                  <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded-full text-xs">Swahili</span>
+                  <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded-full text-xs">French</span>
+                </div>
+                <button class="w-full py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 text-sm">View Profile</button>
+              </div>
+            </div>
+            
+            <!-- Guide 2 -->
+            <div class="w-64 bg-white rounded-lg shadow-md overflow-hidden border border-purple-100">
+              <div class="h-48 overflow-hidden">
+                <img style="object-fit: cover; object-position: top;" src="https://youthvillage.co.ke/wp-content/uploads/Omondi-Eric.webp" alt="Omondi Eric" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-bold text-lg mb-1">Omondi Eric</h3>
+                <p class="text-sm text-purple-600 mb-2">Safari Guide</p>
+                <div class="flex flex-wrap gap-1 mb-3">
+                  <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded-full text-xs">English</span>
+                  <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded-full text-xs">Swahili</span>
+                  <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded-full text-xs">German</span>
+                </div>
+                <button class="w-full py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 text-sm">View Profile</button>
+              </div>
+            </div>
+            
+            <!-- Guide 3 -->
+            <div class="w-64 bg-white rounded-lg shadow-md overflow-hidden border border-purple-100">
+              <div class="h-48 overflow-hidden">
+                <img style="object-fit: cover; object-position: top;" src="https://uploads.concordia.net/2020/09/16120134/download-11.jpg" alt="Amina Hassan" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-bold text-lg mb-1">Amina Hassan</h3>
+                <p class="text-sm text-purple-600 mb-2">Historical Sites Expert</p>
+                <div class="flex flex-wrap gap-1 mb-3">
+                  <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded-full text-xs">English</span>
+                  <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded-full text-xs">Swahili</span>
+                  <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded-full text-xs">Arabic</span>
+                </div>
+                <button class="w-full py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 text-sm">View Profile</button>
+              </div>
+            </div>
+            
+            <!-- Guide 4 -->
+            <div class="w-64 bg-white rounded-lg shadow-md overflow-hidden border border-purple-100">
+              <div class="h-48 overflow-hidden">
+                <img style="object-fit: cover; object-position: top;" src="https://www.capitalfm.co.ke/sports/files/2014/07/KIPROP-MONACO1.jpg" alt="Kiprop Sang" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-bold text-lg mb-1">Kiprop Sang</h3>
+                <p class="text-sm text-purple-600 mb-2">Art & Crafts Specialist</p>
+                <div class="flex flex-wrap gap-1 mb-3">
+                  <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded-full text-xs">English</span>
+                  <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded-full text-xs">Swahili</span>
+                  <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded-full text-xs">Italian</span>
+                </div>
+                <button class="w-full py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 text-sm">View Profile</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-6">
+          <button class="bg-purple-600 hover:bg-purple-700 text-white py-2 px-6 rounded-md">Find More Guides</button>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Events Section -->
+    <section class="px-4 py-8">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-2xl font-bold mb-6 text-purple-900">Upcoming Local Events</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Event 1 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="h-48 w-full overflow-hidden">
+              <img style="object-fit: cover; object-position: top;" src="https://africa.si.edu/wp-content/uploads/3-3.jpg" alt="Maasai Cultural Festival" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-lg mb-1">Maasai Cultural Festival</h3>
+              <div class="flex items-center text-purple-600 mb-3">
+                <i data-lucide="calendar" class="w-4 h-4 mr-1"></i>
+                <span class="text-sm">July 15-17, 2025</span>
+              </div>
+              <p class="text-gray-600 text-sm">Experience traditional Maasai celebrations with music, dance, and local cuisine.</p>
+            </div>
+            <div class="px-4 pb-4">
+              <button class="w-full py-2 border border-purple-600 text-purple-600 rounded-md hover:bg-purple-50 text-sm">View Details</button>
+            </div>
+          </div>
+          
+          <!-- Event 2 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="h-48 w-full overflow-hidden">
+              <img style="object-fit: cover; object-position: top;" src="https://www.sojournsafaris.co.ke/wp-content/uploads/2021/01/nairobi-market.jpg" alt="Nairobi Artisan Market" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-lg mb-1">Nairobi Artisan Market</h3>
+              <div class="flex items-center text-purple-600 mb-3">
+                <i data-lucide="calendar" class="w-4 h-4 mr-1"></i>
+                <span class="text-sm">August 5, 2025</span>
+              </div>
+              <p class="text-gray-600 text-sm">Browse handcrafted goods from local Kenyan creators and artisans.</p>
+            </div>
+            <div class="px-4 pb-4">
+              <button class="w-full py-2 border border-purple-600 text-purple-600 rounded-md hover:bg-purple-50 text-sm">View Details</button>
+            </div>
+          </div>
+          
+          <!-- Event 3 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="h-48 w-full overflow-hidden">
+              <img style="object-fit: cover; object-position: top;" src="https://www.awardsafaris.com/wp-content/uploads/2019/10/Lamu1.jpg" alt="Lamu Cultural Heritage Day" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-lg mb-1">Lamu Cultural Heritage Day</h3>
+              <div class="flex items-center text-purple-600 mb-3">
+                <i data-lucide="calendar" class="w-4 h-4 mr-1"></i>
+                <span class="text-sm">August 21, 2025</span>
+              </div>
+              <p class="text-gray-600 text-sm">Celebrate coastal traditions with performances, exhibitions, and workshops.</p>
+            </div>
+            <div class="px-4 pb-4">
+              <button class="w-full py-2 border border-purple-600 text-purple-600 rounded-md hover:bg-purple-50 text-sm">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-6">
+          <button class="bg-purple-600 hover:bg-purple-700 text-white py-2 px-6 rounded-md">View All Events</button>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Recommendations Section -->
+    <section class="px-4 py-8 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-2xl font-bold mb-6 text-purple-900">Top Recommendations</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Food Recommendations -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden border border-purple-100">
+            <div class="p-0">
+              <h3 class="text-lg font-semibold p-4 bg-purple-100 flex items-center gap-2">
+                <i data-lucide="utensils" class="w-5 h-5 text-purple-600"></i> Food
+              </h3>
+              <div class="p-4 space-y-3">
+                <div class="border-b border-gray-100 pb-2">
+                  <div class="flex justify-between">
+                    <h4 class="font-medium">La Casa Traditional</h4>
+                    <div class="flex items-center">
+                      <i data-lucide="star" class="w-4 h-4 text-yellow-500"></i>
+                      <span class="text-sm ml-1">4.8</span>
+                    </div>
+                  </div>
+                  <p class="text-sm text-gray-600">Authentic local cuisine in a cozy setting.</p>
+                </div>
+                
+                <div class="border-b border-gray-100 pb-2">
+                  <div class="flex justify-between">
+                    <h4 class="font-medium">Garden Fresh Market</h4>
+                    <div class="flex items-center">
+                      <i data-lucide="star" class="w-4 h-4 text-yellow-500"></i>
+                      <span class="text-sm ml-1">4.6</span>
+                    </div>
+                  </div>
+                  <p class="text-sm text-gray-600">Farm-to-table meals with local ingredients.</p>
+                </div>
+                
+                <div class="pb-2">
+                  <div class="flex justify-between">
+                    <h4 class="font-medium">Spice Route Café</h4>
+                    <div class="flex items-center">
+                      <i data-lucide="star" class="w-4 h-4 text-yellow-500"></i>
+                      <span class="text-sm ml-1">4.7</span>
+                    </div>
+                  </div>
+                  <p class="text-sm text-gray-600">Fusion cuisine with local flavors.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Accommodation Recommendations -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden border border-purple-100">
+            <div class="p-0">
+              <h3 class="text-lg font-semibold p-4 bg-purple-100 flex items-center gap-2">
+                <i data-lucide="hotel" class="w-5 h-5 text-purple-600"></i> Accommodation
+              </h3>
+              <div class="p-4 space-y-3">
+                <div class="border-b border-gray-100 pb-2">
+                  <div class="flex justify-between">
+                    <h4 class="font-medium">Heritage Inn</h4>
+                    <div class="flex items-center">
+                      <i data-lucide="star" class="w-4 h-4 text-yellow-500"></i>
+                      <span class="text-sm ml-1">4.9</span>
+                    </div>
+                  </div>
+                  <p class="text-sm text-gray-600">Boutique hotel in a restored historic building.</p>
+                </div>
+                
+                <div class="border-b border-gray-100 pb-2">
+                  <div class="flex justify-between">
+                    <h4 class="font-medium">Garden View B&B</h4>
+                    <div class="flex items-center">
+                      <i data-lucide="star" class="w-4 h-4 text-yellow-500"></i>
+                      <span class="text-sm ml-1">4.7</span>
+                    </div>
+                  </div>
+                  <p class="text-sm text-gray-600">Family-run bed & breakfast with home-cooked meals.</p>
+                </div>
+                
+                <div class="pb-2">
+                  <div class="flex justify-between">
+                    <h4 class="font-medium">Riverside Cottages</h4>
+                    <div class="flex items-center">
+                      <i data-lucide="star" class="w-4 h-4 text-yellow-500"></i>
+                      <span class="text-sm ml-1">4.8</span>
+                    </div>
+                  </div>
+                  <p class="text-sm text-gray-600">Private cottages with stunning natural views.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Experiences Recommendations -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden border border-purple-100">
+            <div class="p-0">
+              <h3 class="text-lg font-semibold p-4 bg-purple-100 flex items-center gap-2">
+                <i data-lucide="compass" class="w-5 h-5 text-purple-600"></i> Experiences
+              </h3>
+              <div class="p-4 space-y-3">
+                <div class="border-b border-gray-100 pb-2">
+                  <div class="flex justify-between">
+                    <h4 class="font-medium">Pottery Workshop</h4>
+                    <div class="flex items-center">
+                      <i data-lucide="star" class="w-4 h-4 text-yellow-500"></i>
+                      <span class="text-sm ml-1">4.9</span>
+                    </div>
+                  </div>
+                  <p class="text-sm text-gray-600">Learn traditional pottery techniques from local artisans.</p>
+                </div>
+                
+                <div class="border-b border-gray-100 pb-2">
+                  <div class="flex justify-between">
+                    <h4 class="font-medium">Guided Nature Trail</h4>
+                    <div class="flex items-center">
+                      <i data-lucide="star" class="w-4 h-4 text-yellow-500"></i>
+                      <span class="text-sm ml-1">4.8</span>
+                    </div>
+                  </div>
+                  <p class="text-sm text-gray-600">Explore local flora and fauna with knowledgeable guides.</p>
+                </div>
+                
+                <div class="pb-2">
+                  <div class="flex justify-between">
+                    <h4 class="font-medium">Cooking Class</h4>
+                    <div class="flex items-center">
+                      <i data-lucide="star" class="w-4 h-4 text-yellow-500"></i>
+                      <span class="text-sm ml-1">4.9</span>
+                    </div>
+                  </div>
+                  <p class="text-sm text-gray-600">Learn to prepare authentic local dishes from expert chefs.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Business Spotlight -->
+    <section class="px-4 py-8">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-2xl font-bold mb-6 text-purple-900">Local Business Spotlight</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Business 1 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row">
+            <div class="md:w-2/3">
+              <img style="object-fit: cover; object-position: top;" src="https://images.takeshape.io/86ce9525-f5f2-4e97-81ba-54e8ce933da7/dev/4b800f52-b48d-44df-b8d3-f986bb57ce96/Maasai%20Beadwork%20%26%20Ugandan%20Barkcloth4.jpeg" alt="Kazuri Beads Collective" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6 md:w-2/3">
+              <h3 class="text-xl font-bold mb-1">Kazuri Beads Collective</h3>
+              <p class="text-purple-600 mb-3 text-sm">Handcrafts & Souvenirs</p>
+              <p class="text-gray-600 mb-4">A cooperative of local artisans creating traditional beadwork using sustainable materials and providing employment to single mothers.</p>
+              <button class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-md text-sm">Visit Website</button>
+            </div>
+          </div>
+          
+          <!-- Business 2 -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row">
+            <div class="md:w-2/3">
+              <img style="object-fit: cover; object-position: right;" src="https://africasafaritravellers.com/wp-content/uploads/2023/05/18-days-uganda-wildlife-safari.jpg" alt="Safari Eco Adventures" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6 md:w-2/3">
+              <h3 class="text-xl font-bold mb-1">Safari Eco Adventures</h3>
+              <p class="text-purple-600 mb-3 text-sm">Tour Operator</p>
+              <p class="text-gray-600 mb-4">Environmentally conscious tours that showcase Kenya's wildlife and natural wonders while preserving local ecosystems and supporting conservation.</p>
+              <button class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-md text-sm">Visit Website</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-6">
+          <button class="bg-purple-600 hover:bg-purple-700 text-white py-2 px-6 rounded-md">Support More Local Businesses</button>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Newsletter Section -->
+    <section class="px-4 py-12 bg-purple-700 text-white">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-2xl font-bold mb-2">Stay Updated with WonderWorld</h2>
+        <p class="mb-6">Be the first to know about new guides, cultural events, and special offers.</p>
+        <div class="flex flex-col sm:flex-row gap-2 justify-center">
+          <input type="email" placeholder="Enter your email" class="px-4 py-2 rounded-l-md w-full sm:w-auto text-gray-800" />
+          <button class="bg-yellow-500 hover:bg-yellow-600 text-purple-900 font-medium px-6 py-2 rounded-r-md">Subscribe</button>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-purple-900 text-white px-4 py-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-xl font-bold flex items-center mb-4">
+              <i data-lucide="globe" class="mr-2"></i> WonderWorld
+            </h3>
+            <p class="text-purple-200 mb-4">Where Language Meets Culture. Connect with local interpreters and discover authentic Kenyan experiences.</p>
+            <div class="flex gap-4">
+              <a href="#" class="text-white hover:text-purple-300"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+              <a href="#" class="text-white hover:text-purple-300"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+              <a href="#" class="text-white hover:text-purple-300"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+              <a href="#" class="text-white hover:text-purple-300"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+            </div>
+          </div>
+          
+          <div>
+            <h3 class="font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-purple-200 hover:text-white">Home</a></li>
+              <li><a href="#" class="text-purple-200 hover:text-white">Find a Guide</a></li>
+              <li><a href="#" class="text-purple-200 hover:text-white">Cultural Events</a></li>
+              <li><a href="#" class="text-purple-200 hover:text-white">Local Businesses</a></li>
+              <li><a href="#" class="text-purple-200 hover:text-white">About Us</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-semibold mb-4">For Guides</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-purple-200 hover:text-white">Register as a Guide</a></li>
+              <li><a href="#" class="text-purple-200 hover:text-white">Guide Resources</a></li>
+              <li><a href="#" class="text-purple-200 hover:text-white">Training Programs</a></li>
+              <li><a href="#" class="text-purple-200 hover:text-white">Success Stories</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-semibold mb-4">Contact Us</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <i data-lucide="map-pin" class="w-5 h-5 mr-2 mt-0.5"></i>
+                <span>123 Heritage Way, Nairobi, Kenya</span>
+              </li>
+              <li class="flex items-center">
+                <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+                <span>+254 123 456 789</span>
+              </li>
+              <li class="flex items-center">
+                <i data-lucide="mail" class="w-5 h-5 mr-2"></i>
+                <span>info@wonderworld.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="border-t border-purple-800 mt-8 pt-6 text-center text-purple-300">
+          <p>&copy; 2025 WonderWorld. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Mobile Navigation -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white shadow-lg border-t border-gray-200 px-4 py-2 z-50 md:hidden">
+      <div class="flex justify-between items-center">
+        <a href="#" class="flex flex-col items-center text-purple-600">
+          <i data-lucide="home" class="w-6 h-6"></i>
+          <span class="text-xs mt-1">Home</span>
+        </a>
+        <a href="#" class="flex flex-col items-center text-gray-500 hover:text-purple-600">
+          <i data-lucide="search" class="w-6 h-6"></i>
+          <span class="text-xs mt-1">Search</span>
+        </a>
+        <a href="#" class="flex flex-col items-center text-gray-500 hover:text-purple-600">
+          <i data-lucide="calendar" class="w-6 h-6"></i>
+          <span class="text-xs mt-1">Events</span>
+        </a>
+        <a href="#" class="flex flex-col items-center text-gray-500 hover:text-purple-600">
+          <i data-lucide="user" class="w-6 h-6"></i>
+          <span class="text-xs mt-1">Profile</span>
+        </a>
+      </div>
+    </div>
+    
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
+      
+      // Simple scroll reveal animation
+      document.addEventListener('DOMContentLoaded', function() {
+        const sections = document.querySelectorAll('section');
+        
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = 1;
+              entry.target.style.transform = 'translateY(0)';
+            }
+          });
+        }, observerOptions);
+        
+        sections.forEach(section => {
+          section.style.opacity = 0;
+          section.style.transform = 'translateY(20px)';
+          section.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
+          observer.observe(section);
+        });
+      });
+    </script>
+  </body>
+</html>
